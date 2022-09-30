@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,400&family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
 
 *{
      margin: 0;
@@ -7,4 +7,97 @@
 }
 body{
      font-family: Montserrat;
+}
+
+
+nav{
+     display: flex;
+     background-color: #1C2833;
+     height: 80px;
+     width: 100%;
+     justify-content: space-between;
+     align-items: center;
+     padding: 0px 50px 0px 80px;
+}
+.logo{
+     font-size: 25px;
+     font-weight: bold;
+     color: white;
+}
+nav ul{
+     display: flex;
+}
+nav ul li{
+     list-style-type: none;
+     margin: 0 8px;
+}
+nav ul li a{
+     text-decoration: none;
+     font-size: 18px;
+     font-weight: 700;
+     color: white;
+     padding: 7px 13px;
+     border-radius: 3px;
+     transition: 0.5s;
+     text-transform: uppercase;
+}
+nav ul li a:hover, nav ul li a.active{
+     background-color: #566573;
+}
+.menu-btn{
+     color: white;
+     font-size: 22px;
+     cursor: pointer;
+     display: none;
+}
+#click{
+     display: none;
+}
+
+
+/* Responsive work start */
+
+@media only screen and (max-width: 940px) {
+     .menu-btn{
+          display: block;
+     }
+     nav ul{
+          position: fixed;
+          top: 80px;
+          left: -100%;
+          background-color: #17202A;
+          height: 100vh;
+          width: 100%;
+          padding-top: 20px;
+          flex-direction: column;
+          text-align: center;
+          transition: all 0.5s ease;
+     }
+     #click:checked ~ .menu-btn i::before{
+          content: "\f00d";
+     }
+     #click:checked ~ ul{
+          left: 0%;
+     }
+     nav ul li{
+          margin: 50px 0;
+     }
+     nav ul li a{
+          font-size: 22px;
+     }
+     nav ul li a:hover, nav ul li a.active{
+          background: none;
+          color: red;
+     }
+}
+
+
+/* header section code start */
+
+header{
+     background-image: url('images/banner.jpg');
+     height: 90vh;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center center;
 }
