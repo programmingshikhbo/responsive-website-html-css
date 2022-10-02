@@ -141,7 +141,47 @@ header{
 }
 
 
-/* first section of main tag media query code start */
+/* Second section of main tag code start */
+
+#second-section{
+     background-color: #154360;
+     padding: 50px 0 100px 0;
+}
+.smart-title{
+     text-align: center;
+     color: yellow;
+     font-size: 35px;
+     letter-spacing: 0.2em;
+     margin-bottom: 30px;
+}
+#smart-parent{
+     margin-left: 200px;
+     margin-right: 200px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+.smart-text{
+     color: white;
+}
+.smart-text h2{
+     margin: 20px 0;
+     font-size: 30px;
+}
+.smart-text a{
+     text-decoration: none;
+     font-size: 22px;
+     background-color: bisque;
+     color: black;
+     padding: 10px 30px;
+     border-radius: 5px;
+     display: inline-block;
+     margin-top: 40px;
+}
+
+
+
+
 
 @media only screen and (max-width: 688px) {
      #service-parent{
@@ -150,7 +190,18 @@ header{
           grid-gap: 10px;
           width: 100%;
      }
+     #smart-parent{
+          margin-left: 30px;
+          margin-right: 30px;
+          display: block;
+     }
+     .smart-image img{
+          width: 100%;
+          margin-bottom: 50px;
+     }
 }
+
+
 
 @media only screen and (min-width: 689px) and (max-width: 1099px) {
      #service-parent{
@@ -158,5 +209,14 @@ header{
           grid-template-columns: repeat(2, 1fr);
           grid-gap: 20px;
           width: 100%;
+     }
+     #smart-parent{
+          margin-left: 70px;
+          margin-right: 70px;
+          display: block;
+     }
+     .smart-image img{
+          width: 100%;
+          margin-bottom: 70px;
      }
 }
