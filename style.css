@@ -101,3 +101,62 @@ header{
      background-size: cover;
      background-position: center center;
 }
+
+
+/* first section of main tag code start */
+
+#first-section{
+     background-color: #16213E;
+     padding-bottom: 100px;
+}
+.service-title{
+     text-align: center;
+     color: white;
+     padding: 50px 0;
+     letter-spacing: 0.2em;
+     font-size: 28px;
+}
+#service-parent{
+     width: 1100px;
+     margin: 0 auto;
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-gap: 25px;
+}
+.single-service{
+     background-color: white;
+     text-align: center;
+     color: black;
+     padding: 30px 20px;
+     border-radius: 5px;
+     border: 3px solid green;
+     box-shadow: 5px 5px 10px grey;
+}
+.single-service i{
+     font-size: 40px;
+}
+.single-service h2{
+     margin: 10px 0;
+     font-weight: bold;
+}
+
+
+/* first section of main tag media query code start */
+
+@media only screen and (max-width: 688px) {
+     #service-parent{
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          grid-gap: 10px;
+          width: 100%;
+     }
+}
+
+@media only screen and (min-width: 689px) and (max-width: 1099px) {
+     #service-parent{
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-gap: 20px;
+          width: 100%;
+     }
+}
