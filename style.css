@@ -417,6 +417,51 @@ form p{
      margin: 10px 0;
 }
 
+/* Footer part code start */
+
+footer{
+     background-color: #154360;
+     padding: 100px 0 50px 0;
+}
+#footer-parent{
+     display: flex;
+     margin-left: 200px;
+     margin-right: 200px;
+     color: white;
+     gap: 80px;
+}
+.single-footer{
+     width: 100%;
+}
+.single-footer h5{
+     margin-bottom: 25px;
+     letter-spacing: 3px;
+}
+.single-footer-2 p{
+     margin: 15px;
+}
+.single-footer-2 a{
+     text-decoration: none;
+     color: white;
+}
+.single-footer-3 ul{
+     display: flex;
+}
+.single-footer-3 ul li{
+     list-style-type: none;
+}
+.single-footer-3 ul li a{
+     text-decoration: none;
+     color: white;
+     margin: 0 5px;
+     background-color: #0a273863;
+     padding: 8px;
+}
+.single-footer h5 span{
+     color: yellow;
+}
+
+
 
 
 
@@ -505,7 +550,23 @@ form p{
      .single-takeCare{
           margin-bottom: 70px;
      }
+     /* Finished Take Care section */
 
+     /* Start Footer Section */
+
+     #footer-parent{
+          display: flex;
+          flex-direction: column;
+          margin-left: 30px;
+          margin-right: 30px;
+     }
+     .single-footer{
+          text-align: center;
+     }
+     .single-footer-3 ul{
+          display: flex;
+          justify-content: center;
+     }
 }
 
 
@@ -588,5 +649,13 @@ form p{
      }
      .single-takeCare{
           margin-bottom: 80px;
+     }
+     /* Finished Take Care section */
+
+     /* Start Footer Section code */
+
+     #footer-parent{
+          margin-left: 70px;
+          margin-right: 70px;
      }
 }
