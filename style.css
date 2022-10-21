@@ -204,6 +204,7 @@ header{
 }
 .more-about-vanilla ul{
      margin: 20px 0;
+     list-style-position: inside;
 }
 .more-about-vanilla a{
      text-decoration: none;
